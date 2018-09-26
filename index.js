@@ -11,7 +11,7 @@ function nowServing(current){
   }
   else{
     var p = current.shift()
-    return p
+    return `Currently serving ${p}`
   }
 }
 
