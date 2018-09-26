@@ -2,7 +2,7 @@ var katzDeliLine = [];
 
 function takeANumber(current, person){
   current.push(person)
-  return(`Welcome, ${person}. You are number ${current.length} in line.`)
+  return(`Welcome, ${person}. You are number ${current.length()} in line.`)
 }
 
 function nowServing(current){
@@ -21,8 +21,8 @@ function currentLine(current){
   }
   else {
     var s = "The line is currently: "
-    for(let i = 0; i < current.length; i++){
-      if(i < current.length-1){
+    for(let i = 0; i < current.length(); i++){
+      if(i < current.length()-1){
         s = s + `${i+1}. ${current[i]}, `
       }
       else{
