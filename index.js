@@ -30,4 +30,5 @@ function currentLine(current){
       }
     }
   }
+  return s
 }
